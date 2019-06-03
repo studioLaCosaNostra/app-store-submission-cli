@@ -1,0 +1,33 @@
+{
+  "name": "app-store-submission-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/src/index.js",
+  "scripts": {
+    "start": "node build/src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check"
+  },
+  "author": "studio la cosa nostra <studiolacosanostra@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "minimist": "^1.2.0",
+    "puppeteer": "^1.17.0",
+    "semver": "^6.1.1"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.4",
+    "@types/minimist": "^1.2.0",
+    "@types/puppeteer": "^1.12.4",
+    "@types/semver": "^6.0.0",
+    "gts": "^1.0.0",
+    "typescript": "^3.4.5"
+  }
+}
